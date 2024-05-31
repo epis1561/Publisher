@@ -1,0 +1,195 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+.roompre_slide{
+    width: 100%;
+    height: 75%;
+    background: url('/images/roompre/01_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.roompre_slide .roompre_title{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    color: #fff;
+    font-family: 'medium';
+    width: 90%;
+}
+
+.roompre_title h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    letter-spacing: 12.5px;
+}
+
+.roompre_title p {
+    font-size: 16px;
+}
+.roomlist-wrap h2{
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: 'medium';
+}
+
+
+.list_wrap{
+    width: 100%;
+    
+    margin-bottom: 5%;
+    position: relative;
+}
+.list_wrap .swiper-wrap{
+width: 95%;
+margin: 0 auto;
+margin-left: 4.5%;
+}
+.list_wrap .swiper-wrapper{
+   
+    height:  auto !important;
+}
+.list_wrap .swiper7{
+    overflow: hidden;
+}
+.list_wrap .swiper-wrap img{
+    width: 90%;
+    height: 100%;
+
+}
+
+.roompre_title{
+    text-align: center;
+margin-bottom: 5%;
+}
+.roompre_title h2 {
+    font-size: 52px;
+    line-height: 72px;
+    margin-bottom: 0;
+}
+.roompre_title span{
+   color: #7B7B7B;
+   font-size: 14px;
+   line-height: 17px;
+   margin-bottom: 3%;
+   display: inline-block;
+}
+.roompre_title p{
+font-size: 16px;
+line-height: 30px;
+}
+
+.swiper-wrap a{
+    width: 100%;
+    height: 100%;
+}
+.swiper-wrap .room_info{
+    text-align: center;
+
+    width: 100%;
+    font-family:"nanum";
+    font-weight: bold;
+    line-height: 27px;
+    font-size: 14px;
+}
+.swiper-wrap span{
+    font-size: 16px;
+    font-weight: bolder;
+}
+.swiper7 .more_hover{
+    display: none;
+}
+.more_box{
+    display: flex;
+    justify-content: center;
+}
+
+.swiper7 .more_box:hover .more_hover{
+    display: inline;
+}
+.swiper7 .more_box:hover .more{
+    display: none;
+}
+.more_box img{
+    width: auto !important;
+    height: auto !important;
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+.more_box a{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width:1200px){
+    .roompre_title h2{
+        font-size: 40px;
+        line-height: 58px;
+    }
+    .roompre_title h2{
+        font-size: 32px;
+    }
+}
+
+@media(max-width:991px){
+    .list_wrap .swiper-wrap{
+        width: 50%;
+        margin: 0 auto;
+    }
+    .list_wrap .swiper-wrap img{
+        width: 100%;
+    }
+    .roompre_title{
+        margin-bottom: 8%;
+    }
+}
+
+@media(max-width:768px){
+    .roompre_slide{
+        margin-bottom: 5%;
+    }
+    .roompre_title h2{
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .roompre_title{
+        width: 70%;
+        margin: 0 auto;
+        margin-bottom: 8%;
+    }
+    .roompre_title p{
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .roompre_title span{
+        font-size: 8px;
+        line-height: 12px;
+    }
+    .title{
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width:500px){
+    .roompre_title h2{
+        font-size: 20px;
+    }
+    .roompre_title p{
+        font-size: 10px;
+        line-height: 16px;
+    }
+    .roompre_title{
+        margin-bottom: 15%;
+    }
+    .list_wrap .swiper-wrap{
+        width: 95%;
+    }
+    .swiper7 .more{
+        display: none;
+    }
+    .swiper7 .more_hover{
+        display: block;
+    }
+}

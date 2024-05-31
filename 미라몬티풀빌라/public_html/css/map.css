@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+
+.mapslide{
+    position: relative;
+    margin-bottom: 5%;
+}
+.mapslide img{
+    width: 100%;
+}
+.mapslide .textbox{
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    text-align: center;
+}
+.mapslide .textbox h2{
+    font-size: 48px;
+    line-height: 62px;
+}
+.mapslide .textbox p{
+font-size: 16px;
+}
+
+.map1{
+    text-align: center;
+    margin-bottom: 7%;
+}
+
+.map1 h2{
+    font-size: 50px;
+    text-align: center; 
+    font-family: 'medium';
+    line-height: 70px;
+}
+
+.map1 p{
+    font-size: 16px;
+    color: #7B7B7B;
+    line-height: 25px;
+    margin-bottom: 65px;
+    font-family: 'medium';
+}
+
+.map1 span{
+    display: block;
+    margin-bottom: 3%;
+}
+#map{
+    width: 80%;
+    margin: 0 auto;
+    height: 650px;
+    margin-bottom: 2%;
+
+}
+@media(max-width:991px){
+    iframe{
+width: 80%;
+margin: 0 auto;
+max-height:350px;
+    }
+}
+
+@media(max-width:768px){
+    #map{
+        height: 450px;
+    }
+    .mapslide .textbox h2{
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 2%;
+    }  
+    .mapslide .textbox p{
+        font-size: 12px;
+    }
+    .mapslide .textbox{
+        width: 100%;
+    }
+}
+@media(max-width:500px){
+    #map{
+        width: 90%;
+        height: 350px;
+    }
+    .map1 h2{
+        font-size: 24px;
+    }
+    .map1 h2::after{
+        width: 18%;
+        margin-top: 7%;
+        margin-bottom: 5%;
+    }
+    .map1 p{
+        font-size: 13px;
+        line-height: 21px;
+        margin-bottom: 5%;
+    }
+    iframe{
+        max-height: 250px;
+    }
+    .map1{
+        margin-bottom: 12%;
+    }
+}

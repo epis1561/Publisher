@@ -1,0 +1,280 @@
+@charset "utf-8";
+/* 기본설정 */
+@import "default.css";
+.tourslide{
+    width: 100%;
+    height: 75%;
+    background: url('/images/tour/01_01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: relative;
+    margin-bottom: 5%;
+}
+.tourslide img{
+    display: block;
+   width: 100%;
+   height: 100%;
+}
+.tourslide .textbox{
+    text-align: center;
+    font-size: 50px;
+    color: #fff;
+    position: absolute;top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9997;
+    font-family: 'medium';
+   
+}
+.tourslide .textbox h2{
+    font-size: 40px;
+    line-height: 50px;
+}
+.tourslide .textbox span{
+    font-size: 22px;
+}
+.tourinfo h2{
+    font-size: 35px;
+    text-align: center;
+  margin-bottom: 7%;
+  font-family: 'medium';
+
+}
+.tour_container{
+    width: 85%;
+    margin: 0 auto;
+    
+}
+.leftbox, .rightbox{
+    display: flex;
+    border: 1px solid #707070;
+   border-collapse: separate;
+}
+.tourwrap .textbox{
+    text-align: center;
+    padding: 5%;
+}
+.title{
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 3%;
+}
+.tour_container .textbox h3{
+    font-size: 44px;
+    line-height: 50px;
+}
+.tour_container .textbox h3 span{
+    font-size: 18px;
+    color: #636363;
+    display: inline-block;
+}
+.tour_container .textbox p{
+    font-size: 20px;
+    margin: 5% 0;
+}
+.tour_container .textbox{
+    font-size: 14px;
+    line-height: 23px;
+}
+.tourwrap{
+    margin-bottom: 5%;
+}
+.tour_container .leftbox .textbox{
+    width: 35%;
+}
+.tour_container .leftbox img{
+    width: 65%;
+    object-fit: fill;
+}
+.tour_container .rightbox .textbox{
+    width: 35%;
+}
+.tour_container .rightbox img{
+    width: 65%;
+    object-fit: fill;
+}
+.mo{
+    display: none;
+}
+@media(max-width:1200px){
+    .title{
+        font-size: 48px;
+    }
+}
+
+@media(max-width:991px){
+    .tour_container .textbox h3{
+        font-size: 34px;
+        line-height: 42px;
+    }
+    .tour_container .textbox h3 span{
+        font-size: 16px;
+    }
+    .tour_container .textbox p{
+        font-size: 18px;
+    }
+    .tour_container .leftbox .textbox{
+        width: 40%;
+    }
+    .tour_container .leftbox img{
+        width: 50%;
+    }
+    .tour_container .rightbox .textbox{
+        width: 40%;
+    }
+    .tour_container .rightbox img{
+        width: 50%;
+    }
+}
+
+@media(max-width:768px){
+ 
+    .leftbox  img{}
+    .tourslide .textbox h2{
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .tourslide .textbox h2 span{
+        font-size: 28px;
+    }
+    .title{
+        font-size: 36px;
+    }
+    .tour_container{
+        width: 95%;
+    }
+    .tour_container .leftbox .textbox{
+        width: 45%;
+    }
+    .tour_container .leftbox img{
+        width: 40%;
+        float: right;
+    }
+    .tour_container .rightbox .textbox{
+        width: 45%;
+    }
+    .tour_container .rightbox img{
+        width: 40%;
+        float: left;
+    }
+    .mo{
+        display: block;
+    }
+    .pc{
+        display: none;
+    }
+
+    .tour_container .textbox h3{
+        font-size: 14px;
+        line-height: 14px;
+    }
+    .tour_container .textbox h3 span{
+        font-size: 10px;
+        color: #636363;
+        display: inline-block;
+    }
+    .tour_container .textbox p{
+        font-size: 16px;
+        margin: 5% 0;
+    }
+    .tour_container .textbox{
+        font-size: 10px;
+        line-height: 15px;
+    }
+    .tourslide{
+        height: 50%;
+    }
+    .tour_container .l1{
+        background-image: url('/images/tour/m/img01.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: right;
+    }
+    .tour_container .r1{
+        background-image: url('/images/tour/m/img02.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: left;
+    }
+    .tour_container .l2{
+        background-image: url('/images/tour/m/img03.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: right;
+    }
+    .tour_container .r2{
+        background-image: url('/images/tour/m/img04.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: left;
+        
+    }
+    .tour_container .l3{
+        background-image: url('/images/tour/m/img05.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: right;
+    }
+    .tour_container .r3{
+        background-image: url('/images/tour/m/img06.jpg');
+        background-repeat: no-repeat;
+        background-size: 110% 100%;
+        background-position-x: left;
+    }
+    .tour_container :nth-child(even){
+        justify-content: end;
+    }
+}
+
+
+@media(max-width:500px){
+    .title{
+        font-size: 26px;
+    }
+    .tourslide .textbox h2{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    .tourslide .textbox h2 span{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:375px){
+    .tour_container .textbox h3{
+        font-size: 12px;
+        line-height: 12px;
+    }
+    .tour_container .textbox h3 span{
+        font-size: 8px;
+        color: #636363;
+        display: inline-block;
+    }
+    .tour_container .textbox p{
+        font-size: 14px;
+        margin: 5% 0;
+    }
+    .tour_container .textbox{
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+    .tour_container .l1{      
+        background-size: 120% 100%;
+    }
+    .tour_container .r1{
+        background-size: 120% 100%;
+    }
+    .tour_container .l2{
+        background-size: 120% 100%;
+    }
+    .tour_container .r2{
+        background-size: 120% 100%;
+    }
+    .tour_container .l3{
+        background-size: 120% 100%;
+    }
+    .tour_container .r3{
+        background-size: 120% 100%;
+    }
+}

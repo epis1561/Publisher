@@ -1,0 +1,279 @@
+@charset "utf-8";
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets{
+  left: 0 !important;
+  display: inline-block !important;
+  width: 10% !important;
+  text-align:  left !important;
+}
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  width: auto !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+.main4 .swiper-horizontal>.swiper-pagination-bullets, .main4 .swiper-pagination-bullets.swiper-pagination-horizontal, .main4 .swiper-pagination-custom, .main4 .swiper-pagination-fraction{
+  top: 50%;
+
+  left: 0% !important;
+  transform: translate(0,-50%) !important;
+}
+.slide_page{
+  position: absolute;
+  bottom: 6% !important;
+  right: 5% !important;
+  width: 10% !important;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.slide_page2{
+  position: absolute;
+  bottom: 2% !important;
+  left: 6.5% !important;
+  width: 10% !important;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.slide_page4{
+  position: absolute;
+  bottom: 3.5% !important;
+  left: 6.5% !important;
+  width: 10% !important;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.slide_page3{
+  position: absolute;
+  top: -7% !important;
+  left: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%,-50%) !important;
+  width: 10% !important;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+  font-size: 34px !important;
+}
+.swiper-pagination-current{
+  font-size: 20px !important;
+  margin-bottom: 0 !important;
+}
+.swiper-pagination-total{
+  font-size: 17px !important;
+  margin-bottom: 0 !important;
+}
+
+
+
+.swiper1 .mainbtn1, .swiper1 .mainbtn2{
+  top: 70% !important;
+  color: #fff !important;
+  font-weight: lighter !important;
+}
+.swiper5 .aboutbtn1, .swiper5 .aboutbtn2{
+  top: 70% !important;
+  color: #fff !important;
+  font-weight: lighter !important;
+}
+.swiper6 .specialbtn1, .swiper6 .specialbtn2{
+  top: 70% !important;
+  color: #fff !important;
+  font-weight: lighter !important;
+}
+.swiper4 .roombtn1, .swiper4 .roombtn2{
+  top: 70% !important;
+  color: #fff !important;
+  font-weight: lighter !important;
+}
+.slide_page2 .roombtn1, .slide_page2 .roombtn2{
+  color: #000 !important;
+  font-weight: lighter !important;
+}
+.slide_page4 .prebtn1, .slide_page4 .prebtn2{
+  color: #000 !important;
+  font-weight: lighter !important;
+}
+.slide_page3 .prebtn1, .slide_page3 .prebtn2{
+  color: #000 !important;
+  font-weight: lighter !important;
+}
+
+
+.swiper2{
+	overflow: hidden;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.swiper2 .swiper-slide img{
+	display: block;
+   filter: brightness(70%);
+}
+
+
+
+
+/* 스와이퍼 2 페이지네이션 */
+.swiper2 .swiper-pagination {
+  position: absolute !important;
+  top: 50% !important;
+  right: 8px !important; /* right 대신 left를 사용하여 왼쪽에 배치하도록 설정 */
+  transform: translateY(-50%) !important;
+  height: 100px !important;
+  cursor:  pointer !important;
+}
+
+.swiper2 .swiper-pagination-bullet {
+  width: max-content;
+  min-height: 30px;
+  background: transparent;
+  opacity: 1;
+}
+
+.swiper2 .swiper-pagination-bullet-active:before {
+  content: "";
+  display: block;
+  position: absolute;
+  border-top: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 10px solid pink;
+  transition: all 0.5s ease-in-out;
+}
+.custom-pagination-item{
+  width: max-content;
+  color: #fff;
+  border-radius: 0 30px 30px 0;
+  padding:2% 4%;
+  cursor: pointer;
+}
+
+.swiper-pagination-bullet-active{
+  background-color: #E3BB17;
+
+}
+
+.swiper3 .swiper-pagination{
+  color:  #000 !important;
+  top: 35% !important;
+}
+.swiper3 .swiper-pagination-current{
+font-size: 15px !important;
+}
+.swiper3 .swiper-pagination-total{
+font-size: 13px !important;
+}
+
+/* 스와이퍼 2 페이지네이션 */
+.swiper7 .swiper-pagination {
+  position: absolute !important;
+  top: 50% !important;
+  left:50% !important; /* right 대신 left를 사용하여 왼쪽에 배치하도록 설정 */
+  transform: translate(-50%,-50%) !important;
+  cursor:  pointer !important;
+  color:  #000 !important;
+}
+
+.mobile{
+  display: none !important;
+}
+i{
+  margin-right: 2%;
+}
+@media(max-width:1200px){
+  .slide_page{
+    width: 15% !important;
+  }
+  .slide_page3{
+    width: 15% !important;
+  }
+}
+@media(max-width:991px){
+  .slide_page4{
+    width: 15% !important;
+    left: 3.5% !important;
+    
+  }
+}
+
+@media(max-width:768px){
+
+  .mobile{
+    display: block !important;
+  }
+  .pc{
+    display: none !important;
+  }
+  .slide_page{
+    width: 25% !important;
+    left: 50% !important;
+    
+    transform: translateX(-50%) !important;
+    z-index: 9997 !important;
+  }
+  .mainslide .swiper-wrapper{
+    height: auto !important;
+  }
+  .swiper1{
+    position: relative !important;
+  }
+  .swiper2 .swiper-slide img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    max-height: 500px;
+  }
+
+  .custom-pagination-item{
+    margin-bottom: 15px !important;
+    font-size: 10px;
+  }
+
+  .slide_page4{
+    left: 10% !important;
+  }
+  .slide_page3{
+    width: 22% !important;
+  }
+  .main4 .swiper-horizontal>.swiper-pagination-bullets, .main4 .swiper-pagination-bullets.swiper-pagination-horizontal, .main4 .swiper-pagination-custom, .main4 .swiper-pagination-fraction{
+    top: 40% !important;
+  }
+}
+
+@media(max-width:500px){
+  .main4 .swiper2 .text-box h2{
+    font-size: 16px;
+    margin-bottom: 5%;
+  }
+  .main4 .swiper2 .text-box p{
+    font-size: 10px;
+  }
+  .custom-pagination-item{
+    font-size: 8px;
+    line-height: 12px;
+  }
+  .slide_page4{
+    width: 35% !important;
+    left: 2% !important;
+    bottom: 1% !important;
+  }
+  .slide_page{
+    width: 42% !important;
+  }
+  .slide_page3{
+    width: 35% !important;
+    top: -7% !important;
+  }
+}
