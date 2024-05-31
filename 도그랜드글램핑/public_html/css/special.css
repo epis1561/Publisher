@@ -1,0 +1,214 @@
+/* special 공용 */
+.special_wrap {
+    background: url("/images/common/bg01.jpg");
+    height: max-content !important;
+}
+.special_wrap > section {
+    height: 100vh;
+}
+
+
+/* special - visual */
+.special_visual .content {
+    position: relative;
+}
+.special_visual .content .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 10;
+    font-size: 2.9em;
+    color: #fff;
+    font-family: 'MBC1961GulimM';
+}
+.special_visual .content .special_swiper01 .btn > div {
+    position: absolute;
+    z-index: 11;
+}
+
+/* special - special_info */
+.special_info {
+    position: relative;
+}
+.special_info .content {
+    position: relative;
+    height: 100%;
+    padding: 95px 0 0 70px;
+    box-sizing: border-box;
+    z-index: 15;
+    background-color: #fff;
+}
+.special_info .content h3 {
+    position: relative;
+    z-index: 15;
+}
+.special_info .content .info {
+    position: relative;
+    margin-top: 125px;
+    padding: 0 70px;
+    box-sizing: border-box;
+    z-index: 15;
+    font-family: 'MBC1961GulimM';
+}
+.special_info .content .info .sp_name {
+    font-size: 2.5em;
+    color: #fd7c42;
+    font-family: 'MBC1961GulimM';
+}
+.special_info .content .info .sp_text {
+    margin-top: 60px;
+    font-size: 1.3em;
+    line-height: 28px;
+    font-family: 'Aggro';
+}
+.special_info .content .info .sp_info {
+    margin-top: 60px;
+    font-size: 1.3em;
+    line-height: 28px;
+}
+.special_info .content .bg .bg01 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    z-index: 14;
+}
+.special_info .content .bg .bg01 img {
+    height: 100%;
+    object-fit: cover;
+}
+.special_info .content .bg .bg02 {
+    position: absolute;
+    bottom: 65px;
+    left: -85px;
+    z-index: 13;
+    opacity: 0.3;
+}
+
+.special_info .sp_nav {
+    position: absolute;
+    right: 40px;
+    bottom: 30px;
+    z-index: 16;
+}
+.special_info .sp_nav > ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.special_info .sp_nav > ul > li.on {
+    color: #3f8dec;
+}
+.special_info .sp_nav > ul > li > a {
+    padding: 10px 0;
+    font-family: 'Aggro';
+}
+
+
+/* 모바일 */
+@media (max-width: 768px) {
+    /* special 공용 */
+    .special_wrap {
+        height: auto !important;
+    }
+    .special_wrap > section {
+        height: max-content;
+    }
+    /* special - visual */
+    .special_visual {
+        height: 450px !important;
+    }
+    .special_visual .content .name {
+        width: max-content;
+        font-size: 1.5em;
+    }
+
+    /* special - special_info */
+    .special_info {
+        height: max-content !important;
+    }
+    .special_info .content {
+        position: relative;
+        padding: 40px 0 45px 0;
+        height: 100%;
+        z-index: 15;
+    }
+    .special_info .content h3 {
+        width: 80%;
+        max-width: 285px;
+        margin: 0 auto;
+    }
+    .special_info .content .info {
+        margin-top: 45px;
+        padding: 0 25px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .special_info .content .info .sp_name {
+        font-size: 1.5em;
+        text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff , 1px -1px 1px #fff, -1px 1px 1px #fff;
+    }
+    .special_info .content .info .sp_text {
+        margin-top: 20px;
+        font-size: 0.9em;
+        line-height: normal;
+        text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff , 1px -1px 1px #fff, -1px 1px 1px #fff;
+    }
+    .special_info .content .info .sp_info {
+        margin-top: 20px;
+        font-size: 0.9em;
+        line-height: normal;
+        text-shadow: 1px 1px 1px #fff, -1px -1px 1px #fff , 1px -1px 1px #fff, -1px 1px 1px #fff;
+    }
+    .special_info .content .bg .bg01 {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 14;
+    }
+    .special_info .content .bg .bg01 img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .special_info .content .bg .bg02 {
+        position: absolute;
+        bottom: 65px;
+        left: -85px;
+        z-index: 13;
+        opacity: 0.3;
+    }
+    
+    .special_info .sp_nav {
+        position: static;
+        background: url("/images/common/bg.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .special_info .sp_nav > ul {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        width: 100%;
+        padding: 15px 10px;
+        box-sizing: border-box;
+    }
+    .special_info .sp_nav > ul > li {
+        display: inline-block;
+        font-size: 0.8em;
+        text-align: center;
+    }
+    .special_info .sp_nav > ul > li.on {
+        color: #3f8dec;
+    }
+    .special_info .sp_nav > ul > li > a {
+        height: 19px;
+        display: block;
+        line-height: 19px;
+        padding: 0;
+    }
+    
+}

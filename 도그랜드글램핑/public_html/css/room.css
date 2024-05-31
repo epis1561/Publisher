@@ -1,0 +1,355 @@
+/* room 공용 */
+.room_wrap {
+    background: url("/images/common/bg01.jpg");
+    width: 100%;
+    height: max-content !important;
+    object-fit: cover;
+    overflow: hidden;
+}
+.room_wrap > section {
+    height: 100vh;
+}
+
+
+/* room - visual */
+.room_visual .content {
+    position: relative;
+    height: 100%;
+}
+.room_visual .content .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -25%);
+    z-index: 10;
+    font-size: 2.9em;
+    color: #fff;
+    text-align: center;
+    font-family: 'MBC1961GulimM';
+}
+.room_visual .content .room_swiper01 .btn > div {
+    position: absolute;
+    z-index: 11;
+}
+.room_visual .content .room_swiper01 .btn .room_swiper01-next {
+    top: 50%;
+    right: 60px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.room_visual .content .room_swiper01 .btn .room_swiper01-prev {
+    top: 50%;
+    left: 60px;
+    transform: translate(0, -50%);
+    cursor: pointer;
+}
+.room_visual .content .room_swiper01 .btn .room_swiper01-pagination {
+    left: 50%;
+    bottom: 65px;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+.room_visual .content .bg > div {
+    position: absolute;
+}
+.room_visual .content .bg .bg01 {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 10; 
+}
+
+
+/* room - info */
+.room_info {
+    overflow: initial;
+}
+.room_info .content {
+    display: flex;
+    height: 100%;
+}
+.room_info .content > div {
+    width: 50%;
+}
+.room_info .content .main_img {
+    position: relative;
+    height: 100%;
+}
+.room_info .content .main_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.room_info .content .room_detail_info {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 60px 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.room_info .content .room_detail_info > div {
+    margin-bottom: 30px;
+}
+.room_info .content .room_detail_info > div:last-child {
+    margin-bottom: 0;
+}
+.room_info .content .room_detail_info > div.info_title {
+    width: max-content;
+    margin-bottom: 15px;
+    padding: 10px 10px 2px 10px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #00a473;
+}
+.room_info .content .room_detail_info > div.info_text {
+    font-size: 0.9em;
+    line-height: 22px;
+}
+
+.room_info .content .detail_btn {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+    padding: 25px 20px 17px 25px;
+    box-sizing: border-box;
+    background-color: #fff;
+    cursor: pointer;
+}
+.room_info .content .detail_btn > div {
+    display: none;
+}
+
+.room_info .content .detail_btn > div:nth-child(1) {
+    display: block;
+}
+.room_info .content .detail_btn.on > div:nth-child(1) {
+    display: none;
+}
+
+.room_info .content .detail_btn.on > div:nth-child(2) {
+    display: block;
+}
+
+
+
+.room_info .content .info {
+    position: relative;
+    padding: 45px 105px 30px 105px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.room_info .content .info .info_text {
+    position: relative;
+    z-index: 15;
+}
+.room_info .content .info .info_text .room_name {
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    box-sizing: border-box;
+    color: #00a473;
+    background-color: #fff;
+    font-family: 'PyeongChangPeace-Bold' !important;
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 0px 3px 1px #ffc800;
+    border-radius: 60%;
+}
+.room_info .content .info .info_text .room_text {
+    margin-top: 75px;
+    font-size: 1.3em;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Aggro';
+}
+.room_info .content .info .info_text .room_keyward {
+    margin-top: 40px;
+    font-size: 1.3em;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Aggro';
+}
+.room_info .content .info .info_text .room_sub_swiper {
+    height: max-content !important;
+    margin-top: 40px;
+}
+.room_info .content .info .info_text .room_sub_swiper .btn {
+    margin-top: 30px;
+}
+.room_info .content .info .info_text .room_sub_swiper .btn .room_sub_swiper-pagination {
+    text-align: right;
+}
+.room_info .content .info .info_text .room_sub_swiper .btn .room_sub_swiper-pagination .swiper-pagination-bullet {
+    margin: 0 5px;
+    background-color: #a8a8a8;
+}
+.room_info .content .info .info_text .room_sub_swiper .btn .room_sub_swiper-pagination .swiper-pagination-bullet-active {
+    background-color: #3f8dec;
+}
+.room_info .content .info .bg {}
+.room_info .content .info .bg > div {
+    position: absolute;
+}
+.room_info .content .info .bg .bg01 {
+    top: 50px;
+    right: -85px;
+    z-index: 14;
+    opacity: 0.3;
+}
+.room_info .content .info .bg .bg02 {
+    top: 32%;
+    left: 25px;
+    z-index: 14;
+    opacity: 0.3;
+}
+
+
+/* 모바일 */
+@media (max-width: 768px) {
+    /* room 공용 */
+    .room_wrap {
+        height: auto !important;
+    }
+    .room_wrap > section {
+        height: max-content;
+    }
+
+
+    /* room - visual */
+    .room_visual {
+        height: 450px !important;
+        overflow: hidden;
+    }
+    .room_visual .content .name {
+        width: max-content;
+        font-size: 1.5em;
+    }
+    .room_visual .content .room_swiper01 .btn > div {
+        position: absolute;
+        z-index: 11;
+    }
+    .room_visual .content .room_swiper01 .btn .room_swiper01-next {
+        right: 20px;
+        width: 15px;
+    }
+    .room_visual .content .room_swiper01 .btn .room_swiper01-prev {
+        left: 20px;
+        width: 15px;
+    }
+    .room_visual .content .room_swiper01 .btn .room_swiper01-pagination {
+        display: none;
+    }
+    .room_visual .content .bg .bg01 {
+        bottom: -1px;
+    }
+    .room_visual .content .bg .bg01 img {
+        width: 200%;
+        max-width: none;
+    }
+
+
+
+    /* room - info */
+    .room_info {
+        height: max-content !important;
+    }
+    .room_info .content {
+        display: flex;
+        flex-flow: column;
+        height: 100%;
+    }
+    .room_info .content > div {
+        width: 100%;
+    }
+    .room_info .content .main_img {
+        order: 2;
+    }
+    .room_info .content .main_img img {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+    }
+    .room_info .content .room_detail_info {
+        display: block;
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        padding: 30px 20px;
+        /* margin: -30% 20px 0 20px; */
+        background-color: transparent;
+    }
+    .room_info .content .room_detail_info > div {
+        margin-bottom: 20px;
+    }
+    .room_info .content .room_detail_info > div:last-child {
+        margin-bottom: 0;
+    }
+    .room_info .content .room_detail_info > div.info_title {
+        margin-bottom: 15px;
+        font-size: 1em;
+    }
+    .room_info .content .room_detail_info > div.info_text {
+        font-size: 0.9em;
+    }
+    
+    .room_info .content .detail_btn {
+        display: none;
+    }
+    
+
+    .room_info .content .info {
+        padding: 0;
+        overflow: inherit;
+    }
+    .room_info .content .info .info_text .room_name {
+        width: 80%;
+        max-width: 250px;
+        padding: 20px;
+        font-size: 1.5em;
+    }
+
+    .room_info .content .info .info_text .room_text {
+        margin-top: 20px;
+        font-size: 0.8em;
+        line-height: normal;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .room_info .content .info .info_text .room_keyward {
+        margin-top: 20px;
+        font-size: 0.8em;
+        line-height: normal;
+    }
+    .room_info .content .info .info_text .room_sub_swiper {
+        margin-top: 30px;
+    }
+    .room_info .content .info .info_text .room_sub_swiper .btn {
+        margin: 10px 0;
+    }
+    .room_info .content .info .info_text .room_sub_swiper .btn .room_sub_swiper-pagination {
+        text-align: center;
+    }
+    .room_info .content .info .bg {}
+    .room_info .content .info .bg > div {
+        position: absolute;
+    }
+    .room_info .content .info .bg .bg01 {
+        width: 57%;
+        max-width: 206px;
+        top: 120px;
+        right: -85px;
+    }
+    .room_info .content .info .bg .bg02 {
+        width: 58%;
+        max-width: 204px;
+        top: -7%;
+        left: -66px;
+    }
+}
+
+

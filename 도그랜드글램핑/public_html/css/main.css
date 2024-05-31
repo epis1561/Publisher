@@ -1,0 +1,656 @@
+
+.section {
+    background: url('/images/common/bg01.jpg') repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+.main_slide .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main01 {
+    position: relative;
+    width: 100%;
+    max-height: 979px;
+    overflow: hidden;
+}
+.main01 .obj .obj01 {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    bottom: 0;
+}
+.main01 .obj .obj02 {
+    position: absolute;
+    z-index: 10;
+    right: 2%;
+    bottom: 2%;
+}
+.main01 .obj .obj03 {
+    position: absolute;
+    z-index: 10;
+    left: 3%;
+    bottom: 10%;
+}
+.main02 {
+    background: url('/images/common/bg02.jpg') repeat;
+    background-size: contain;
+}
+.main02 .con01 {
+    width: 100%;
+    height: 92.5%;
+    position: relative;
+    top: 0;
+    text-align: center;
+}
+.main02 .typo {
+    position: absolute;
+    text-align: right;
+    top: 20%;
+    z-index: 10;
+    width: 100%;
+    font-size: 4em;
+    font-family: 'MBC1961GulimM';
+}
+.main02 .typo svg {
+    height: 100%;
+    overflow: unset;
+}
+.main02 .typo text {
+    fill: #e87070;
+}
+.main02 .con01 img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.main02 .con01 > .txt {
+    position: absolute;
+    left: 15%; top: 45%;
+    color: #fff;
+    text-align: left;
+    line-height: 1.8em;
+    font-size: 1.3em;
+}
+.main02 .con01 > .txt p {
+    text-shadow: 0 0 5px #343434;
+    font-family: 'Aggro';
+
+}
+.main02 .con01 > .txt .btn {
+    padding: 2% 10%;
+    background: black;
+    display: inline-block;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 5%;
+    transition: all 0.3s;
+    font-family: 'Aggro';
+}
+.main02 .con01 > .txt .btn:hover {
+    background: #fff;
+    color: black;
+    transition: all 0.3s;
+}
+.main02 .con02 {
+    width: 100%;
+    height: 7.5%;
+    background: #00544c;
+    display: flex;
+    align-items: flex-end;
+}
+.main02 .con02 .txt {
+    color: #fff;
+    width: 100%;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    white-space: nowrap;
+    animation: move 50s linear infinite;
+}
+@keyframes move {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-130%);
+    }
+}
+.main03 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main03 div {
+    position: absolute;
+}
+.main03 .img01 {
+    bottom: 0;
+    left: 6%;
+}
+.main03 .img02 {
+    top: 15%;
+    right: 0;
+}
+.main03 .obj01 {
+    top: 15%;
+    left: 3%;
+}
+.main03 .obj02 {
+    bottom: 2%;
+    right: 0;
+}
+.main03 .txt {
+    bottom: 8%;
+    right: 14%;
+    color: #0a140a;
+}
+.main03 .txt h3 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    font-family: 'MBC1961GulimM';
+}
+.main03 .txt h3 em {
+    color: #ff8721;
+    font-family: 'MBC1961GulimM';
+}
+.main03 .txt p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding-top: 10%;
+    font-family: 'Aggro';
+}
+.main04 {
+    position: relative;
+}
+.main04 div {
+    position: absolute;
+}
+.main04 .img01 {
+    bottom: 34%;
+    right: 18%;
+}
+.main04 .img02 {
+    bottom: 10%;
+    right: 5%;
+    z-index: 5;
+}
+.main04 .obj01 {
+    bottom: 11%;
+    left: 0;
+}
+.main04 .obj02 {
+    top: 7%;
+    left: 27%;
+}
+.main04 .txt {
+    position: absolute;
+    bottom: 13%;
+    text-align: right;
+    left: 9%;
+}
+.main04 .txt h3 {
+    font-size: 2.5em;
+    line-height: 1.3em;
+    font-weight: normal;
+    font-family: 'MBC1961GulimM';
+}
+.main04 .txt h3 em {
+    color: #3f8dec;
+    font-family: 'MBC1961GulimM';
+}
+.main04 .txt p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding-top: 5%;
+    font-family: 'Aggro';
+}
+.main05 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.main05 div {
+    position: absolute;
+}
+.main05 .img01 {
+    bottom: 0;
+    left: 0;
+}
+.main05 .img02 {
+    top: 0;
+    right: 0;
+}
+.main05 .obj01 {
+    top: 13%;
+    left: 27%;
+}
+.main05 .obj02 {
+    bottom: 2%;
+    left: 34%;
+}
+.main05 .obj03 {
+    bottom: 13%;
+    right: 0;
+}
+.main05 .txt {
+    position: absolute;
+    bottom: 15%;
+    text-align: center;
+    right: 15%;
+}
+.main05 .txt h3 {
+    color: #fff;
+    font-size: 2.5em;
+    line-height: 1.3em;
+    font-weight: normal;
+    font-family: 'MBC1961GulimM';
+}
+.main05 .txt h3 em {
+    color: #00a473;
+    font-family: 'MBC1961GulimM';
+}
+.main05 .txt p {
+    font-size: 1.5em;
+    line-height: 1.3em;
+    padding-top: 5%;
+    font-family: 'Aggro';
+}
+.main05 .btn {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    padding: 1%;
+    background: black;
+    color: #fff;
+    font-size: 1.3em;
+    display: inline-block;
+    border-radius: 30px;
+    transition: all 0.3s;
+}
+.main05 .btn:hover {
+    background: #fff;
+    color: black;
+    transition: all 0.3s;
+}
+.main06 {
+    width: 100%;
+    height: 100%;
+    background: url('/images/common/bg02.jpg') repeat;
+    background-size: contain;
+}
+.main06 .r_list {
+    width: 100%;
+    height: 90%;
+}
+.main06 .r_list .typo {
+    position: relative;
+    width: 100%;
+    height: 45%;
+}
+.main06 .r_list .typo .txt {
+    position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+}
+.main06 .r_list .typo .txt h3 {
+    font-size: 3.5em;
+    color: #3f8dec;
+    text-shadow: 5px 3px 0 #ffc800;
+    line-height: 2.3em;
+    font-family: 'MBC1961GulimM';
+}
+.main06 .r_list .typo .txt p {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin-top: 10%;
+    font-family: 'Aggro';
+}
+.main06 .r_list .room_list {
+    width: 85%;
+    height: 55%;
+}
+.room_list .swiper-slide {
+    width: 450x;
+    height: 400px;
+    text-align: center;
+    font-size: 18px;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    background: transparent !important;
+}
+.room_list .swiper-slide .shape {
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+}
+.room_list .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: brightness(0.8);
+    transition: all 0.3s;
+}
+.room_list .swiper-slide .room_img {
+    width: 120%;
+    margin-left: -10%;
+}
+.room_list .swiper-slide .room_img img {
+    width: 100%;
+}
+.room_list .swiper-slide .room_name {
+    width: 100%;
+    background: #ffc800;
+    color: #0a140a;
+    text-align: center;
+    padding: 3% 0;
+    position: absolute;
+    bottom: 0;
+    transition: all 0.3s;
+    font-family: 'Aggro';
+}
+.room_list .swiper-slide:hover img {
+    filter: brightness(1);
+    transition: all 0.3s;
+}
+.room_list .swiper-slide:hover .room_name {
+    background: #3f8dec;
+    color: #fff;
+    transition: all 0.3s;
+}
+.rl_next, .rl_prev {
+    top: 68% !important;
+}
+.rl_prev {
+    left: 3.5% !important;
+}
+.rl_next {
+    right: 3.5% !important;
+}
+.rl_prev:after {
+    content: '<' !important;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+.rl_next:after {
+    content: '>' !important;
+    font-family: 'GangwonEduPowerExtraBoldA';
+}
+:root {
+    --swiper-theme-color: #0a140a;
+    
+}
+
+
+@media (max-width: 1400px) {
+    .main03 .img02 {
+        bottom: 0;
+        left: 6%;
+        display: none;
+    }
+    .main04 .img02 {
+        bottom: 10%;
+        right: 5%;
+        z-index: 5;
+        display: none;
+    }
+    .main05 .img01 {
+        bottom: 0;
+        left: 0;
+        display: none;
+    }
+    .main05 .obj01 {
+        display: none;
+        top: 13%;
+        left: 27%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main01 {
+        height: 500px !important;
+    }
+    .main_slide .swiper-slide img {
+        width: 100% !important;
+    }
+    .main02, .main03, .main04, .main05, .main06 {
+        height: 600px !important;
+    }
+    .main01 .obj .obj01, .main01 .obj .obj02, .main01 .obj .obj03 {
+        display: none;
+    }
+    .main01 .obj .obj04 {
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        bottom: 0;
+    }
+    .main02 .con01 {
+        width: 100%;
+        height: 93%;
+        position: relative;
+        top: 0;
+        text-align: center;
+    }
+    .main02 .typo svg {
+        height: 100%;
+        overflow: unset;
+        display: none;
+    }
+    .main02 .con01 > .txt {
+        position: absolute;
+        left: 50%;
+        top: 70%;
+        transform: translateX(-50%);
+        color: #fff;
+        text-align: center;
+        line-height: 1.2em;
+        font-size: 0.9em;
+        width: 100%;
+    }
+    .main02 .con02 {
+        width: 100%;
+        height: 7%;
+        background: #3f8dec;
+        display: flex;
+        align-items: flex-end;
+    }
+    .main02 .con02 .txt {
+        color: #fff;
+        width: 100%;
+        font-size: 1.5em;
+        line-height: 1.8em;
+        white-space: nowrap;
+        animation: move 50s linear infinite;
+        font-family: 'MBC1961GulimM';
+    }
+    .main03 .img01 {
+        top: 25%;
+        right: 0;
+        left: unset;
+        width: 90%;
+    }
+    .main03 .obj01 {
+        top: 3%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 75%;
+    }
+    .main03 .obj02 {
+        bottom: 3%;
+        right: 0;
+        width: 30%;
+    }
+    .main03 .txt h3 {
+        font-size: 1.5em;
+        line-height: 1.2em;
+    }
+    .main03 .txt p {
+        font-size: 1em;
+        line-height: 1.2em;
+        padding-top: 4%;
+    }
+    .main03 .txt {
+        bottom: 10%;
+        right: unset;
+        left: 10%;
+        color: #0a140a;
+    }
+    .main04 .img01 {
+        bottom: unset;
+        top: 5%;
+        right: 18%;
+        width: 80%;
+    }
+    .main04 .img02 {
+        bottom: unset;
+        top: 25%;
+        right: 5%;
+        z-index: 5;
+        display: block;
+        width: 80%;
+    }
+    .main04 .obj01 {
+        display: none;
+    }
+    .main04 .obj02 {
+        top: unset;
+        bottom: 6%;
+        left: 0;
+        width: 45%;
+    }
+    .main04 .txt {
+        position: absolute;
+        bottom: 25%;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+    .main04 .txt h3 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        font-weight: normal;
+    }
+    .main04 .txt p {
+        font-size: 1em;
+        line-height: 1.2em;
+        padding-top: 4%;
+    }
+    .main05 .img02 {
+        top: 0;
+        right: unset;
+        left: -47%;
+        width: 150%;
+    }
+    .main05 .obj02 {
+        bottom: 2%;
+        left: 34%;
+        display: none;
+    }
+    .main05 .obj03 {
+        bottom: 5%;
+        right: unset;
+        left: 0;
+        width: 50%;
+    }
+    .main05 .txt {
+        position: absolute;
+        bottom: 20%;
+        text-align: right;
+        right: 8%;
+    }
+    .main05 .txt h3 {
+        font-size: 1.3em;
+        line-height: 1.2em;
+        word-break: keep-all;
+        font-weight: normal;
+    }
+    .main05 .txt p {
+        font-size: 1em;
+        line-height: 1.2em;
+        padding-top: 5%;
+    }
+    .main05 .btn {
+        position: absolute;
+        bottom: 10%;
+        right: 8%;
+        padding: 2% 2.5%;
+        background: black;
+        color: #fff;
+        font-size: 1em;
+        display: inline-block;
+        border-radius: 30px;
+        transition: all 0.3s;
+    }
+}
+
+@media (max-width: 768px) {
+    .main06 .r_list .typo .txt {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        width: 100%;
+    }
+    .main06 .r_list .typo .txt h3 {
+        font-size: 2em;
+        color: #3f8dec;
+        text-shadow: 5px 3px 0 #ffc800;
+        line-height: 2.3em;
+    }
+    .main06 .r_list .txt > img {
+        width: 80px;
+    }
+    .main06 .r_list .typo .txt p {
+        font-size: 1em;
+        line-height: 1.3em;
+        margin-top: 5%;
+        width: 100%;
+    }
+    .main06 .r_list .room_list {
+        width: 70%;
+        height: 55%;
+        overflow: unset;
+    }
+    .room_list .swiper-slide {
+        height: 300px;
+        text-align: center;
+        font-size: 18px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .main05 .img02{
+        left: -43%;
+        width: 150%;
+    }
+}

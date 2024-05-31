@@ -1,0 +1,38 @@
+/*강원튼튼체*/
+@font-face {
+    font-family: 'GangwonEduPowerExtraBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduPowerExtraBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*평창평화체*/
+@font-face {
+    font-family: 'PyeongChangPeace-Bold';
+    src: url('./font/PyeongChangPeace-Bold.ttf') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+/*프리텐다드*/
+@font-face {
+    font-family: 'Pretendard-Medium';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'MBC1961GulimM';
+    src: url('./font/MBC\ 1961굴림\ M.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aggro';
+    src: url('./font/SB\ 어그로\ M.ttf');
+}
