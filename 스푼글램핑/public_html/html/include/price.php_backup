@@ -1,0 +1,142 @@
+<?
+include_once('../html/_common.php');
+// 요금 문자열 가공
+function get_price($price) {
+if (strpos($price,',') === false) return number_format($price);
+else return $price;
+return 0;
+}
+// 요금표 명칭정보 가져오기
+$row = sql_fetch(" select * from yj_room ");
+$row2 = sql_fetch(" select * from yj_room ");
+// 요금표 목록 가져오기
+if($roomnum) {
+	$sql = " select * from yj_room where roomnum='$roomnum'";
+} else {
+	$sql = " select * from yj_room order by roomno asc";
+}
+	$result = sql_query($sql);
+	$result2 = sql_query($sql);
+?>
+
+<? if($roomnum) { // 1개의 객실정보 출력
+	for ($k=0; $k<=$i; $k++) {
+	$row[$k][roomno] = sprintf('%02d',$k + 1); //반복문 반복된 횟수에 따라 생성되는 번호, $roomnum은 URL에서의 번호를 따옴
+	if ($roomnum == $row[$k][roomno]) {
+?>
+	
+	<table class="reserTable">
+		<colgroup>
+			<col style="width:20%;">
+			<col style="width:12%;">
+			<col style="width:8%;">
+			<col style="width:16%;">
+			<col style="width:5%;">
+			<col style="width:5%;">
+			<col style="width:16%;">			
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" rowspan="2">객실</th>
+				<th scope="col" rowspan="2">유형</th>
+				<th scope="col" rowspan="2">주차</th>
+				<th scope="col" rowspan="2">크기(m)</th>
+				<th scope="col" colspan="2">인원</th>
+				<th scope="col" rowspan="2">요금</th>
+			</tr>
+			<tr>
+				<th scope="col">기준</th>
+				<th scope="col">최대</th>
+			</tr>
+		</thead>
+		<tbody>
+			<? 
+				$i = 1;				
+				while ($row = sql_fetch_array($result, MYSQL_BOTH)) {
+				//$row[anchorlink] = sprintf('%02d',$row[roomnum]); //링크변수 01, 02, 03.. 규칙으로 새로 생성하여 링크 바꿔줌
+			?>
+			<tr>
+				<tr>
+				<th scope="row"><?echo $row[roomname]?></th>
+				<td><?echo $row[memo1]?></td>
+				<td><?echo $row[pay_9]?></td>
+				<td><?echo $row[pyoung]?></td>
+				<td><?echo $row[mancount]?>명</td>
+				<td><?echo $row[mancount_max]?>명</td>
+				<td><?echo get_price($row[pay_normal]);?>만원</td>
+			</tr>
+			<? 
+				$i++;
+			} ?>
+		</tbody>		
+	</table>
+	<ul class="roomFa list01">
+		<li>연박할인 : 이틀 이상 이용하시는 경우, 1만원의 할인을 해드립니다.</li>
+		<li>추가인원 비용 : 기준인원에서 추가시 1명당 성인 10,000원, 아이(10세 이하) 5,000원</li>
+		<li>매점 이용시간 : 비수기 09:30 ~ 21:30 (11월~4월) /  성수기 09:00 ~ 22:00 (5월~10월)</li>
+		<li>샤워장 이용시간 : 09:00 ~ 22:00 (온수이용시간  : 09:00 ~ 11:00 / 13:00 ~ 15:00 / 19:00 ~ 21:30)</li>
+		<li>취사장 이용시간 : 09:00 ~ 22:00</li>
+		<li>전구간 금연구역입니다.(흡연장소는 다리건너 좌측입니다)</li>
+		<li>레팩스 BBQ테이블 / 화로대테이블 / 키친테이블 / 트윈스토브 / 코펠(5-6)인용</li>
+		<li>히포작업등 / LED랜턴(3500k) /휴지케이스 / 종이컵홀더 / 삼각대 / 더치오븐</li>
+		<li>쓰레기봉투걸이/ 의자4개 / 캠핑컵 / 설거지통 / 식기건조망 / 키친툴세트 / 방수포</li>
+		<li>자충배개 / 커틀리리세트 / 릴선20m/ 폴더블쉘프 / 에어씨큘레이터 / 타프팬 / 랜텐스탠드</li>
+	</ul>
+	
+
+<? }
+}
+?>
+<? } else { //전체출력?>
+	<table class="reserTable">
+		<colgroup>
+			<col style="width:15%;">
+			<col>
+			<col>
+			<col>
+			<col>
+			<col>
+			<col style="width:13%;">
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col" rowspan="2">객실</th>
+				<th scope="col" rowspan="2">유형</th>
+				<th scope="col" rowspan="2">주차</th>
+				<th scope="col" rowspan="2">크기(m)</th>
+				<th scope="col" colspan="2">인원</th>
+				<th scope="col" rowspan="2">요금</th>
+			</tr>
+			<tr>
+				<th scope="col">기준</th>
+				<th scope="col">최대</th>
+			</tr>
+		</thead>
+		<? 
+			$i = 1;				
+			while ($row = sql_fetch_array($result, MYSQL_BOTH)) {
+			$row[anchorlink] = sprintf('%02d',$row[roomnum]); //링크변수 01, 02, 03.. 규칙으로 새로 생성하여 링크 바꿔줌
+			$row[roomno] = sprintf('%02d',$row[roomno]);
+		?>
+		<tbody>
+			<tr class="room_<?echo $row[roomno]?>">
+				<th scope="row" class="roomName">
+					<?echo $row[roomname]?>
+					<div class="roomLink"><a href="./room.php?roomnum=<?echo $row[anchorlink]?>" title="<?echo $row[roomname]?>"><?echo $row[roomname]?></a></div>
+				</th>
+				<td><?echo $row[memo1]?></td>
+				<td><?echo $row[pay_9]?></td>
+				<td><?echo $row[pyoung]?></td>
+				<td><?echo $row[mancount]?>명</td>
+				<td><?echo $row[mancount_max]?>명</td>
+				<td><?echo get_price($row[pay_normal]);?>만원</td>				
+			</tr>
+		</tbody>
+		<? 
+			$i++;
+		} ?>
+	</table>
+<?
+}
+$dom=null;
+?>

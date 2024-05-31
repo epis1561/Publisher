@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.mainArea { position:relative; }
+
+.mainTypo { position: absolute; text-align: right; z-index: 35; right: 7%; bottom: 0; transform: translateY(60%); -ms-transform: translateY(60%); -webkit-transform: translateY(60%);}
+.mainTypo p { display:inline-block; margin:-1em auto 0; text-align:right; font-family: 'Crimson Text', serif; font-size: 7.7em; font-size: 5.25vw; line-height: 0.8em; font-weight:100; color:#4cc1e3; pointer-events: none;}
+
+.mainCon:after {content:"";display:block;clear:both;}
+.mainLink { position:absolute; width:80%; left:10%; top:50%; margin-top:-26px; z-index:2;}
+.mainLink li { float:left; width:33.3%; text-align:center;}
+.mainLink li a { position:relative; display:inline-block; padding:0 0.8em 0 0.5em; font-family: 'Playfair Display', serif; font-size:2.5em; line-height:1.6em; font-style:italic; border-bottom:1px solid rgba(255, 255, 255, 0.5); -webkit-transition: all 0.2s ease; -moz-transition: all 0.2s ease; -ms-transition: all 0.2s ease; -o-transition: all 0.2s ease; transition: all 0.2s ease;}
+.mainLink li a .line{ position:absolute; right:0; bottom:0; width:10px; height:1px; background:url(../images/bg/white_50.png); transform: translate(0, -3px) rotate(45deg); -ms-transform: translate(0, -3px) rotate(45deg); -webkit-transform: translate(0, -3px) rotate(45deg); }
+.mainLink li a:hover { margin-left:0.5em;}
+
+/* 팝업레이어 */
+#hd_pop {z-index:1000;position:relative;margin:0 auto; width:100%; max-width:970px;height:0}
+#hd_pop h2, .sound_only {position:absolute;font-size:0;line-height:0;overflow:hidden}
+.hd_pops {position:absolute;border:1px solid #e9e9e9;background:#fff}
+.hd_pops_con {}
+.hd_pops_footer {padding:10px 0;background:#000;color:#fff;text-align:right}
+.hd_pops_footer button {margin-right:5px;padding:5px 10px;border:0;background:#393939;color:#fff}
+
+@media  (max-width: 1480px){
+.mainArea { }
+
+}
+
+@media  (max-width: 1024px){
+.mainArea { width:100%; left:0;}
+.mainLink { margin-top:-3.2vw; }
+.mainLink li a {  padding:0 0.8em 0 0.5em; font-size:3.5vw; line-height:1.8em;}
+.mainLink li a .line{  width:6px; transform: translate(0, -1.8px) rotate(45deg); -ms-transform: translate(0, -1.8px) rotate(45deg); -webkit-transform: translate(0, -1.8px) rotate(45deg); }
+
+.mRoom_arrow_inner {width:55%;}
+.mRoom_arrow_inner a {width:50%; height:50px; font-size:1.8em;}
+
+}
+
+
+@media  (max-width: 768px){
+
+}
+
+@media  (max-width: 560px){
+}
